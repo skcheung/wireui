@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Http\Kernel;
+use Themosis\Core\Http\Kernel;
 
 /** @link https://github.com/livewire/livewire/blob/master/tests/HttpKernel.php */
 class HttpKernel extends Kernel
@@ -15,10 +15,10 @@ class HttpKernel extends Kernel
      * @var array
      */
     protected $middleware = [
-        \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \Illuminate\Foundation\Http\Middleware\TrimStrings::class,
-        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        // \Themosis\Core\Http\Middleware\CheckForMaintenanceMode::class,
+        \Themosis\Core\Http\Middleware\ValidatePostSize::class,
+        \Themosis\Core\Http\Middleware\TrimStrings::class,
+        \Themosis\Core\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
     /**
@@ -32,7 +32,7 @@ class HttpKernel extends Kernel
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class,
+            \Themosis\Core\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 

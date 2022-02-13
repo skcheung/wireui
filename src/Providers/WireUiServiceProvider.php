@@ -2,7 +2,7 @@
 
 namespace WireUi\Providers;
 
-use Illuminate\Foundation\AliasLoader;
+use Themosis\Core\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\{ServiceProvider, Stringable};
 use Illuminate\View\Compilers\BladeCompiler;
