@@ -2,7 +2,7 @@
 
 namespace WireUi\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use Themosis\Core\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use WireUi\Facades\WireUi;
 use WireUi\View\Components\BaseButton;

@@ -2,9 +2,9 @@
 
 namespace WireUi\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use Themosis\Core\Auth\Access\AuthorizesRequests;
+use Themosis\Core\Bus\DispatchesJobs;
+use Themosis\Core\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
